@@ -1,0 +1,10 @@
+*.env
+secrets.py
+__pycache__/
+*.pyc
+*.pth
+*.mp3
+*.webm
+*.zip
+.DS_Store
+Thumbs.db
