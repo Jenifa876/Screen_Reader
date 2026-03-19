@@ -1,1 +1,16 @@
-
+transformers
+accelerate
+bitsandbytes
+openai-whisper
+gtts
+pydub
+ultralytics
+Pillow
+opencv-python-headless
+sentencepiece
+protobuf
+soundfile
+google-generativeai
+flask
+flask-cors
+pyngrok
