@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Visual Assistant</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <h2>Visual Assistant</h2>
+  <label for="apiUrl">ngrok Server URL:</label><br><br>
+  <input type="url" id="apiUrl" placeholder="https://xxxx.ngrok-free.app">
+  <button id="saveBtn">Save and Test Connection</button>
+  <div id="status" class="status"></div>
+  <div class="help">
+    <strong>How to use:</strong><br>
+    1. Right-click any image and select Describe this image<br>
+    2. Wait 30-60 seconds for description and audio<br>
+    3. Press Ask or Alt+Shift+Q for voice questions<br><br>
+    <strong>Shortcuts:</strong><br>
+    Alt+Shift+D: Describe focused image<br>
+    Alt+Shift+Q: Ask or stop voice<br>
+    Enter on image: Describe it
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

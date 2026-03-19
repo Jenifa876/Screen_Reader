@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Visual Assistant for NVDA",
+  "version": "7.0.0",
+  "description": "AI image description and voice Q&A for visually impaired users",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Visual Assistant"
+  }
+}
